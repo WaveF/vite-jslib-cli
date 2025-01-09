@@ -5,7 +5,7 @@ const path = require('path');
 
 // 获取命令行参数
 const args = process.argv.slice(2);
-const projectName = args[0] || 'my-vpage';
+const projectName = args[0] || 'my-jslib';
 
 // 检查项目是否已存在
 if (fs.existsSync(projectName)) {

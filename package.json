@@ -1,0 +1,18 @@
+{
+  "name": "vite-jslib-cli",
+  "version": "1.0.0",
+  "description": "Create javascript library with vite",
+  "main": "./bin/jslib.js",
+  "bin": {
+    "jslib": "./bin/jslib.js"
+  },
+  "scripts": {
+    "git:info": "git remote -v",
+    "git:reset": "git remote remove origin",
+    "git:init": "git remote add gitee https://gitee.com/wavef/vite-jslib-cli.git && git remote add github https://github.com/WaveF/jslib.git && git push -u gitee master",
+    "git:push": "git push --force gitee master && git push --force github master:main"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
